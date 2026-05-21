@@ -14,7 +14,7 @@ function Home() {
           transition={{ duration: 1 }}
         >
           <img
-            src='dist/images/logo.png'
+            src='/images/logo.png'
             alt='Company Logo'
             className='company-logo'
           />
