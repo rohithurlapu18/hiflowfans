@@ -1,0 +1,155 @@
+.about-page {
+  background: #f8fafc;
+}
+
+.about-hero {
+  height: 50vh;
+
+  background:
+    linear-gradient(
+      rgba(2,6,23,0.85),
+      rgba(15,23,42,0.85)
+    ),
+    url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=2070&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 22px;
+  color: #99f6e4;
+}
+
+.company-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  padding: 100px 60px;
+  align-items: center;
+}
+
+.overview-content h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.overview-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.overview-image img {
+  width: 100%;
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.15);
+}
+
+.certifications {
+  padding: 100px 40px;
+  background: white;
+  text-align: center;
+}
+
+.certifications h2 {
+  font-size: 46px;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 30px;
+}
+
+.cert-card {
+  background: #f8fafc;
+  padding: 40px 30px;
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.4s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+}
+
+.cert-card h3 {
+  color: #0f766e;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.cert-card p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+.mission-section {
+  padding: 100px 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #164e63
+    );
+
+  text-align: center;
+  color: white;
+}
+
+.mission-section h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.mission-section p {
+  max-width: 900px;
+  margin: auto;
+
+  line-height: 1.9;
+  font-size: 22px;
+
+  color: #cbd5e1;
+}
+
+@media(max-width:900px) {
+
+  .company-overview {
+    grid-template-columns: 1fr;
+    padding: 70px 25px;
+  }
+
+  .about-hero h1 {
+    font-size: 42px;
+  }
+
+  .certifications h2,
+  .mission-section h2 {
+    font-size: 36px;
+  }
+}
