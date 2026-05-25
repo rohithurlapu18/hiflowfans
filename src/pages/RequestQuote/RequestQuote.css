@@ -1,0 +1,211 @@
+.request-quote-page {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.quote-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ffffff, var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote-hero p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Quote Main Section */
+.quote-main-section {
+  max-width: 1200px;
+  margin: 60px auto 100px;
+  padding: 0 20px;
+}
+
+.quote-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* Guidelines Column */
+.guidelines-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.instruction-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(10px);
+}
+
+.card-top-icon {
+  font-size: 36px;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+
+.instruction-card h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.instruction-card p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.guidelines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.guidelines-list li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 20px;
+}
+
+.guidelines-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-teal);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.guidelines-list li strong {
+  color: var(--text-primary);
+}
+
+/* Guidelines Card Secondary */
+.guidelines-card-secondary {
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--glass-shadow);
+}
+
+.card-header-icon-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.header-icon {
+  font-size: 22px;
+  color: var(--color-teal);
+}
+
+.guidelines-card-secondary h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.guidelines-card-secondary p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.tip-box {
+  background: rgba(249, 115, 22, 0.05);
+  border: 1px solid rgba(249, 115, 22, 0.15);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tip-icon {
+  font-size: 20px;
+  color: var(--color-orange);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tip-box p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.tip-box strong {
+  color: var(--text-primary);
+}
+
+/* Form Column */
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.column-title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.column-title p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .quote-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-hero h1 {
+    font-size: 34px;
+  }
+  .quote-hero p {
+    font-size: 16px;
+  }
+  .instruction-card {
+    padding: 30px 20px;
+  }
+}

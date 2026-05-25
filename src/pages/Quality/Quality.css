@@ -1,0 +1,247 @@
+.quality-page {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.quality-hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quality-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ffffff, var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quality-hero p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Quality Standards Cards */
+.standards-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.std-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease;
+}
+
+.std-card:hover {
+  border-color: var(--color-accent);
+}
+
+.std-icon-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.std-icon {
+  font-size: 24px;
+  color: var(--color-teal);
+}
+
+.std-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.std-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Specifications Table */
+.specifications-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.specs-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 15px;
+}
+
+.specs-table th, .specs-table td {
+  padding: 20px 24px;
+}
+
+.specs-table th {
+  background: rgba(255, 255, 255, 0.03);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.specs-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.specs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mat-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-primary);
+  width: 30%;
+}
+
+.mat-spec {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  width: 70%;
+}
+
+/* Balancing Demo Callout Card */
+.balancing-demo-section {
+  max-width: 1200px;
+  margin: 80px auto 100px;
+  padding: 0 20px;
+}
+
+.demo-glass-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(3, 7, 18, 0.95) 100%);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 50px;
+  box-shadow: var(--glass-shadow);
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.demo-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.demo-content p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.demo-content p:last-child {
+  margin-bottom: 0;
+}
+
+.demo-badge {
+  background: rgba(6, 182, 212, 0.05);
+  border: 1px dashed rgba(6, 182, 212, 0.3);
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-title {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.badge-number {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.badge-unit {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-teal);
+  margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+  .demo-glass-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 30px;
+  }
+  .demo-badge {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-hero h1 {
+    font-size: 34px;
+  }
+  .quality-hero p {
+    font-size: 16px;
+  }
+  .specs-table th, .specs-table td {
+    padding: 16px 18px;
+  }
+  .mat-name {
+    width: 40%;
+  }
+  .mat-spec {
+    width: 60%;
+  }
+}
